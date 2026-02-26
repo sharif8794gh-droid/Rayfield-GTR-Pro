@@ -1,0 +1,45 @@
+body { 
+    margin: 0; 
+    overflow: hidden; 
+    background: #020205; 
+    font-family: 'Segoe UI', sans-serif;
+    /* আপনার দেওয়া সিকিউরিটি সেটিংস */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+}
+
+#rotate-notice {
+    position: fixed; inset: 0; background: #000; color: #fff;
+    display: none; align-items: center; justify-content: center; z-index: 2000;
+}
+@media screen and (orientation: portrait) { #rotate-notice { display: flex; } }
+
+#loader { 
+    position: fixed; inset: 0; background: #000; color: #00ffff; 
+    display: flex; justify-content: center; align-items: center; z-index: 1000; 
+}
+
+#game-ui {
+    position: absolute; top: 20px; left: 20px; color: #00ffff; z-index: 10;
+    pointer-events: none;
+}
+.stat-box { 
+    background: rgba(0, 255, 255, 0.1); padding: 10px 20px; 
+    border-left: 4px solid #00ffff; font-weight: bold; font-size: 20px;
+}
+
+#controls { 
+    position: fixed; bottom: 30px; width: 100%; display: flex; 
+    justify-content: space-between; padding: 0 50px; box-sizing: border-box; 
+}
+.control-group { display: flex; gap: 20px; }
+
+button { 
+    width: 85px; height: 85px; background: rgba(0, 255, 255, 0.1); 
+    border: 2px solid #00ffff; border-radius: 50%; color: #00ffff; 
+    font-size: 30px; backdrop-filter: blur(5px); outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+button:active { background: rgba(0, 255, 255, 0.4); transform: scale(0.95); }

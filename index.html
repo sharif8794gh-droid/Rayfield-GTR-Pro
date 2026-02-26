@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Rayfield GTR Pro - Saved Version</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="rotate-notice">দয়া করে ফোনটি আড়াআড়ি (Landscape) করুন 🔄</div>
+
+    <div id="loader">Loading Rayfield Caliburn...</div>
+
+    <div id="game-ui">
+        <div class="stat-box">SPEED: <span id="speed-val">0</span> KM/H</div>
+    </div>
+
+    <div id="controls">
+        <div class="control-group">
+            <button id="btn-left">◀</button>
+            <button id="btn-right">▶</button>
+        </div>
+        <div class="control-group">
+            <button id="btn-up">▲</button>
+            <button id="btn-down">▼</button>
+        </div>
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
